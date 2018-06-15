@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viseven Imagestock</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic" rel="stylesheet">
+</head>
+<body>
+    <div class="wrap">
+        <div class="container">
+            <header>
+                <h1>WELCOME TO VISEVEN <span>IMAGESTOCK</span></h1>
+            </header>
+            <main>
+                <section id="gallery">
+                    <div id="btn-add-image" class="square">
+                        <input type="file" id="inp-file-select" multiple accept="image/*">
+                        <div class="btn-circle"><span class="btn-plus">&#10010</span></div>
+                        <p class="btn-title">Add your<br>Picture</p>
+                        <button id="btn-file-select"></button>
+                    </div>
+                </section>
+                <section id="popup">
+                    <div class="popup-content">
+                        <span class="btn-popup-close">&#10006</span>
+                        <figure class="popup-image-frame"></figure>
+                        <aside class="popup-comments">
+                            <p class="popup-total-comments">Comments: <span class="total">5</span></p>
+                            <div class="popup-comments-stack"></div>
+                            <form name="comment" method="get">
+                                <input type="text" name="nickname" placeholder="Type your nickname here...">
+                                <textarea type="text" name="massage" rows="2" placeholder="Write your comment here..."></textarea>
+                                <button id="popup-form-btn" type="submit"></button>
+                            </form>
+                        </aside>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
